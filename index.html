@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Perímetros, Áreas y Volúmenes</h1>
+        <form id="calcForm">
+            <label for="shape">Selecciona una figura:</label>
+            <select id="shape">
+                <option value="">--Selecciona--</option>
+                <option value="square">Cuadrado</option>
+                <option value="rectangle">Rectángulo</option>
+                <option value="circle">Círculo</option>
+                <option value="triangle">Triángulo</option>
+                <option value="cube">Cubo</option>
+                <option value="rectangularPrism">Prisma Rectangular</option>
+                <option value="sphere">Esfera</option>
+                <option value="cone">Cono</option>
+            </select>
+
+            <div id="inputsContainer"></div>
+
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+
+        <div id="results">
+            <h2>Resultados:</h2>
+            <p id="perimeter"></p>
+            <p id="area"></p>
+            <p id="volume"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
